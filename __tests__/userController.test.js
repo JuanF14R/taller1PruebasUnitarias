@@ -23,7 +23,7 @@ describe('Pruebas de los controladores de los usuarios', () => {
     // Lo utilizamos para cerrar la conexión de la base de datos osea a mongoDB despues de todas las pruebas.
     afterAll(async () => {
         await mongoose.connection.close();
-    })
+    });
 
     const testUser = {
         fullName: 'Juan Rodriguez',
